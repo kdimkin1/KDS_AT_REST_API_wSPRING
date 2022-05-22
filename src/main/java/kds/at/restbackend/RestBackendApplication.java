@@ -23,6 +23,7 @@ public class RestBackendApplication {
 		return new ObjectMapper().setPropertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE);
 	}
 
+
 	// connect Swagger: see https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
 	// 4.1. Java Configuration
 	@Bean

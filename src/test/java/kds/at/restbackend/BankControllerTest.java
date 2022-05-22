@@ -3,6 +3,7 @@ package kds.at.restbackend;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import kds.at.restbackend.domain.UserInfo;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.Collectors;
@@ -13,14 +14,15 @@ import static io.restassured.RestAssured.with;
 public class BankControllerTest {
 
     static {
-        RestAssured.baseURI = "http://localhost:8080";
+        RestAssured.baseURI = "http://localhost:8081";
     }
     private RequestSpecification spec =
             with()
-                    .baseUri("http://localhost:8080")
+                    .baseUri("http://localhost:8081")
                     .basePath("/");
 
     @Test
+    @Tag("lessonTests")
     void bankControllerTest() {
         UserInfo[] userInfos = spec.get("user/getAll")
                 .then()
