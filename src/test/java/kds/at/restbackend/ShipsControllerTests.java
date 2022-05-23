@@ -24,7 +24,7 @@ public class ShipsControllerTests {
                     .basePath("/");
     @Test
     @Story("Ships")
-    @DisplayName("Positive:Get all ships from test fleet")
+    @DisplayName("Positive:Get all ships from test fleet (ships/getAll)")
     void shipsGetAllPositiveTest() {
         ShipsInfo[] shipsInfo =
                 given()
@@ -47,15 +47,10 @@ public class ShipsControllerTests {
         assertThat(first.get().getBuildYear()).isEqualTo("2005");
     }
 
-//    static Stream<Arguments> argumentsForPositiveGetAllShips() {
-//        return Stream.of(
-//                Arguments.of(ShipsStatus.builder().name("Маленький Принц").build())
-//        );
-//    }
 
     @Test
     @Story("Ships")
-    @DisplayName("Negative:Get all ships from test fleet")
+    @DisplayName("Negative:Get all ships from test fleet(ships/getAll)")
     void shipsGetAllNegativeTest() {
         ShipsInfo[] shipsInfo =
                 given()
@@ -78,15 +73,10 @@ public class ShipsControllerTests {
         assertThat(first.get().getBuildYear()).isNotEqualTo("2007");
     }
 
-//    static Stream<Arguments> argumentsForNegativeGetAllShips() {
-//        return Stream.of(
-//                Arguments.of(ShipsStatus.builder().name("Маленький Принц").build())
-//        );
-//    }
 
     @Test
     @Story("Ships")
-    @DisplayName("Positive:Post ships by ID from test fleet")
+    @DisplayName("Positive:Post ships by ID from test fleet(ships/getShipsInfoListById)")
     void shipsGetByIDPositiveTest() {
         ShipsInfo[] shipsInfo =
                 given()
@@ -113,7 +103,7 @@ public class ShipsControllerTests {
 
     @Test
     @Story("Ships")
-    @DisplayName("Negative:Post ships by ID from test fleet")
+    @DisplayName("Negative:Post ships by ID from test fleet(ships/getShipsInfoListById)")
     void shipsGetByIDNegativeTest() {
         ShipsInfo[] shipsInfo =
                 given()

@@ -1,7 +1,7 @@
 # Automation Tests (Spring Boot based simple Rest application with Swagger and Rest-Assured tests)
 
 ## Technology Stack
-| <a href="https://www.jetbrains.com/idea/"><img src="images/IDEA-logo.svg" width="40" height="40"  alt="IDEA"/></a> | <a href="https://www.jetbrains.com/idea/"><img src="images/java-logo.svg" width="40" height="40"  alt="Java"/></a> | <a href="https://www.jetbrains.com/idea/"><img src="images/git-logo.svg" width="40" height="40"  alt="git-logo"/></a> | <img src="images/junit5-logo.svg" width="40" height="40"  alt="JUnite"/> | <img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" width="100" height="40"  alt="Spring"/> | <img src="images/swagger-logo.png" width="40" height="40"  alt="Swagger"/> | <img src="images/rest-assured-logo.png" width="40" height="40"  alt="Rest-Assured"/> |
+| <a href="https://www.jetbrains.com/idea/"><img src="images/IDEA-logo.svg" width="40" height="40"  alt="IDEA"/></a> | <img src="images/java-logo.svg" width="40" height="40"  alt="Java"/> | <img src="images/git-logo.svg" width="40" height="40"  alt="git-logo"/> | <img src="images/junit5-logo.svg" width="40" height="40"  alt="JUnite"/> | <img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" width="100" height="40"  alt="Spring"/> | <img src="images/swagger-logo.png" width="40" height="40"  alt="Swagger"/> | <img src="images/rest-assured-logo.png" width="40" height="40"  alt="Rest-Assured"/> |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: |:---------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
 |                                                                           IDEA                                                                            | Java |                                                          Git                                                          |                                  JUnite                                  |                                                         Spring Boot                                                          |                                  Swagger                                   |                                     Rest-Assured                                     |
 
@@ -24,11 +24,11 @@ src/test/java/kds/at/restbackend/ShipsControllerTests.java
 
 ## Common links&notes:
 ```bash
-Spting boot:
+Spring boot application settings: 
 src/main/resources/application.properties
 server.port=8081
 
-Swagger:
+Swagger documentation:
 https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
 3.1. Spring Boot Dependency
 4.1. Java Configuration
